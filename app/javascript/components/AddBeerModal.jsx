@@ -11,10 +11,12 @@ class AddBeerModal extends React.Component {
 
 	onFinish = (values) => {
 		const url = "api/v1/beers/create";
+		const token =  document.querySelector('[name=csrf-token]').content		
 		fetch(url, {
 			method: "post",
 			headers: {
 				"Content-Type": "application/json",
+				"X-CSRF-TOKEN": token
 			},
 			body: JSON.stringify(values),
 		})

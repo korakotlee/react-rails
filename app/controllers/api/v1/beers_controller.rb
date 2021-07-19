@@ -1,6 +1,6 @@
 class Api::V1::BeersController < ApplicationController
     before_action :set_beer, only: [:show, :edit, :update, :destroy]
-    skip_before_action :verify_authenticity_token  
+    # skip_before_action :verify_authenticity_token  
     # GET /beers
     # GET /beers.json
     def index
