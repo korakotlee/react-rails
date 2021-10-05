@@ -14,6 +14,6 @@ export default () => (
         <Beers />
       </div>
     </Content>
-    <Footer style={{ textAlign: "center" }}>Honeybadger ©2020.</Footer>
+    <Footer style={{ textAlign: "center" }}>Korakot Base Template</Footer>
   </Layout>
 );
